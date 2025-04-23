@@ -10,7 +10,7 @@
 ## mind to change set before running the program!
 PREFIX=<prefix>  # your sample prefix
 WORK_PATH=<working path>  # your main working path containing the fastq file of processed reads
-CLUSTER_OUTPUT=${WORK_PATH}/cluster_data/  # the path to the folder where you can find clustering results
+CLUSTER_OUTPUT=${WORK_PATH}/cluster_data  # the path to the folder where you can find clustering results
 
 cd-hit-est -i ${WORK_PATH}/${PREFIX}.fastq \
 -o ${CLUSTER_OUTPUT}/${PREFIX}_merge \
