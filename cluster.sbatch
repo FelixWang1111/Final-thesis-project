@@ -8,12 +8,11 @@
 
 #### set ----
 ## mind to change set before running the program!
-PREFIX=07id07SS_S57_L001  # your sample prefix
+PREFIX=<prefix>  # your sample prefix
 WORK_PATH=~/HTGTS/data/output_data  # your main working path
-MERGE_INPUT=${WORK_PATH}/merge_data  # the path to the folder where you can find merged fastq files
-CLUSTER_OUTPUT=${WORK_PATH}/cluster_data/20241111  # the path to the folder where you can find final results
+CLUSTER_OUTPUT=${WORK_PATH}/cluster_data/  # the path to the folder where you can find final results
 
-cd-hit-est -i ${MERGE_INPUT}/${PREFIX}_merge_flash.fastq \
+cd-hit-est -i ${WORK_PATH}/${PREFIX}.fastq \
 -o ${CLUSTER_OUTPUT}/${PREFIX}_merge \
 -c 0.95 -n 10 -M 3000 -T 0
 
